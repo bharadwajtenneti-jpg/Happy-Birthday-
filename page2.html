@@ -73,7 +73,7 @@ box-shadow:0 20px 45px rgba(0,0,0,0.45);
 width:100%;
 height:auto;
 max-height:420px;
-object-fit:contain;   /* ⭐ IMPORTANT FIX */
+object-fit:contain;
 display:block;
 border-radius:3px;
 }
@@ -174,7 +174,7 @@ color:#ff5a5a;
 display:none;
 }
 
-/* ⭐ MOBILE FIX */
+/* MOBILE FIX */
 @media(max-width:900px){
 
 body{
@@ -196,7 +196,7 @@ padding:15px;
 .polaroid img{
 width:100%;
 max-height:300px;
-object-fit:contain;   /* ⭐ FULL IMAGE SHOW FIX */
+object-fit:contain;
 }
 
 .keypad{
@@ -232,7 +232,6 @@ text-align:center;
 <div class="left">
 
 <div class="polaroid">
-
 <img src="photo.jpg" alt="photo">
 
 <div class="caption">
@@ -312,7 +311,7 @@ updateBoxes();
 function checkPass(){
 const error = document.getElementById("error");
 
-if(password === "2107"){
+if(password === "2108"){
 window.location.href = "page3.html";
 }else{
 error.style.display = "block";
